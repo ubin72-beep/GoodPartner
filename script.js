@@ -7,21 +7,7 @@ const projects = [
   { name: '오로라서클', url: 'https://auroralank.co.kr/', category: '커뮤니티 · 문화', description: 'AI와 인문학, 심리와 창작을 함께 나누는 여성 커뮤니티.', image: 'images/auroracircle.png', logo: 'AURORA CIRCLE', sub: 'CREATE · CONNECT · GROW', bg: '#dfe7cf', color: '#3e5135' }
 ];
 
-const grid = document.querySelector('#portfolioGrid');
-grid.innerHTML = projects.map((project, index) => `
-  <a class="project-card" href="${project.url}" target="_blank" rel="noopener noreferrer" aria-label="${project.name} 사이트 새 창으로 열기">
-    <div class="project-visual project-visual-image" style="background:${project.bg};color:${project.color}">
-      <img class="project-screenshot" src="${project.image}" alt="${project.name} 홈페이지 화면 미리보기" loading="lazy" />
-      <span class="project-number">0${index + 1} / 05</span>
-      <span class="project-open">↗</span>
-    </div>
-    <div class="project-info">
-      <div class="project-topline"><h3>${project.name}</h3><span class="project-type">${project.category}</span></div>
-      <p>${project.description}</p>
-      <span class="project-url">${project.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span>
-    </div>
-  </a>
-`).join('');
+// 포트폴리오 카드와 실제 캡처 이미지 5장은 index.html에 직접 포함되어 있습니다.
 
 // 문의 메일 주소를 변경하려면 아래 EMAIL 값을 수정하세요.
 // 현재는 운영 중인 심석 사이트에 공개된 이메일을 임시 기본값으로 사용합니다.
