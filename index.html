@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="굿파트너는 공정한 기회와 사람을 위한 교육을 통해 자기 이해와 성장을 돕습니다.">
+<title>Good Partner | Life Design Solution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111827;--muted:#626875;--paper:#fbfaf7;--line:#d9d8d2;--accent:#b7a88a;--dark:#10131c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(17,24,39,.08)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.04em;font-size:20px}.brand-logo{display:block;width:190px;height:auto;max-height:62px;object-fit:contain}.brand small{display:block;font-size:9px;letter-spacing:.19em;font-weight:500;color:var(--muted);margin-top:-3px}.nav-links{display:flex;gap:29px;font-size:13px;font-weight:600}.nav-links a:hover{color:#9c8865}.menu{display:none;border:0;background:none;font-size:26px}
+.hero{padding:100px 0 0;overflow:hidden}.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#82765f}.hero-grid{display:grid;grid-template-columns:1fr .88fr;gap:55px;align-items:center}.hero h1{font-size:clamp(44px,6vw,76px);line-height:1.13;letter-spacing:-.075em;margin:22px 0 24px;font-weight:900}.hero h1 span{display:block;color:#8f8065}.hero p{font-size:17px;color:#555b66;max-width:510px;word-break:keep-all}.actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border:1px solid var(--ink);font-size:13px;font-weight:700;transition:.2s}.btn.primary{background:var(--ink);color:#fff}.btn:hover{transform:translateY(-2px)}.hero-photo{height:560px;position:relative;background:linear-gradient(180deg,rgba(9,14,22,.02),rgba(9,14,22,.32)),url('korean-team-collaboration.png') center/cover}.photo-caption{position:absolute;bottom:26px;left:26px;color:#fff;font-size:12px;letter-spacing:.1em}.photo-caption strong{display:block;font-size:25px;letter-spacing:-.04em}
+.trustbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:70px}.trustbar .wrap{display:grid;grid-template-columns:repeat(3,1fr);padding:23px 0}.trustbar div{padding:0 28px;border-right:1px solid var(--line)}.trustbar div:first-child{padding-left:0}.trustbar div:last-child{border:0}.trustbar strong{display:block;font-size:16px}.trustbar span{font-size:12px;color:var(--muted)}
+section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.2;letter-spacing:-.065em;margin:10px 0 0}.section-head p{max-width:430px;color:var(--muted);font-size:14px;margin:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about-title{font-size:clamp(30px,4vw,46px);letter-spacing:-.065em;line-height:1.35;font-weight:800}.about-copy{color:#555b66;font-size:15px}.about-copy p{margin-top:0;margin-bottom:20px}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:45px}.value{background:var(--dark);color:#fff;padding:27px 25px;min-height:180px}.value .num{font-size:11px;color:#c5b697;letter-spacing:.13em}.value h3{font-size:20px;letter-spacing:-.04em;margin:17px 0 8px}.value p{font-size:12px;color:#c6c8ce;margin:0}
+.programs{background:#f0eee8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid #e2e0d9;min-height:330px;padding:30px;display:flex;flex-direction:column;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #1b24300e}.card .n{font-size:12px;color:#958568;letter-spacing:.12em}.card h3{font-size:25px;letter-spacing:-.06em;margin:22px 0 12px}.card p{font-size:14px;color:var(--muted);margin:0}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:24px}.tags span{border:1px solid #dedbd2;padding:5px 9px;font-size:11px;color:#555b66}.card a{margin-top:auto;padding-top:30px;font-size:12px;font-weight:800}
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.method-photo{height:480px;background:url('korean-team-collaboration.png') center/cover}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:80px 1fr;gap:20px;padding:23px 0;border-bottom:1px solid var(--line)}.step span{font-size:12px;color:#958568;font-weight:800}.step h3{font-size:19px;margin:0 0 6px;letter-spacing:-.04em}.step p{font-size:13px;color:var(--muted);margin:0}
+.impact{background:var(--dark);color:#fff}.impact .eyebrow{color:#c5b697}.impact .section-head p{color:#b5bac4}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#343741;border:1px solid #343741}.impact-card{padding:32px;background:var(--dark);min-height:230px}.impact-card h3{font-size:24px;letter-spacing:-.05em;margin:20px 0 12px}.impact-card p{font-size:13px;color:#c2c5cc}.impact-card .symbol{font-size:25px;color:#c5b697}
+.contact{padding:100px 0}.contact-box{background:#eae6dc;padding:55px;display:flex;justify-content:space-between;gap:30px;align-items:center}.contact-box h2{font-size:clamp(30px,4vw,46px);line-height:1.25;letter-spacing:-.06em;margin:12px 0}.contact-box p{color:#626875;margin:0}
+footer{background:#10131c;color:#fff;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-row p{font-size:11px;color:#aeb3bd;margin:4px 0}.footer-brand{font-weight:800}.top{position:fixed;right:22px;bottom:22px;width:42px;height:42px;background:#111827;color:white;display:grid;place-items:center;font-size:18px}
+@media(max-width:800px){.wrap{width:min(100% - 34px,600px)}.nav{height:70px}.brand-logo{width:155px;max-height:52px}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);padding:20px 24px 26px;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.menu{display:block}.hero{padding-top:55px}.hero-grid,.about-grid,.method-grid{grid-template-columns:1fr;gap:30px}.hero h1{font-size:48px}.hero-photo{height:390px}.trustbar{margin-top:35px}.trustbar .wrap{grid-template-columns:1fr;gap:16px;padding:20px 0}.trustbar div{border:0;padding:0!important}.trustbar span{display:block}.section-head{display:block}.section-head p{margin-top:20px}.about-grid{gap:18px}.values,.cards,.impact-grid{grid-template-columns:1fr}.value{min-height:145px}.card{min-height:280px}.method-photo{height:320px}.contact-box{padding:32px 25px;display:block}.contact-box .btn{margin-top:25px}.footer-row{align-items:flex-start;flex-direction:column}.top{right:14px;bottom:14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Good Partner 홈">
+      <img class="brand-logo" src="good-partner-logo.png" alt="Good Partner 로고">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">굿파트너 소개</a><a href="#programs">교육 프로그램</a><a href="#method">교육 방식</a><a href="#impact">사회공헌</a><a href="#contact">문의하기</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="메뉴 열기">☰</button>
+  </div>
+</header>
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Fair opportunity · Human-centered education</div>
+        <h1>당신의 가능성을<br><span>함께 발견합니다.</span></h1>
+        <p>공정한 기회, 사람을 위한 교육. 굿파트너는 자신을 이해하고 더 나은 삶의 방향을 찾아가는 여정에 함께합니다.</p>
+        <div class="actions"><a class="btn primary" href="#programs">프로그램 살펴보기 ↗</a><a class="btn" href="#about">굿파트너 알아보기</a></div>
+      </div>
+      <div class="hero-photo"><div class="photo-caption"><strong>Good Partner</strong>YOUR GROWTH, OUR PURPOSE</div></div>
+    </div>
+    <div class="trustbar"><div class="wrap">
+      <div><strong>사람 중심의 교육</strong><span>각자의 존엄과 가능성을 존중합니다.</span></div>
+      <div><strong>자기 이해에서 실천까지</strong><span>발견한 가치를 삶의 변화로 연결합니다.</span></div>
+      <div><strong>함께 성장하는 공동체</strong><span>신뢰와 존중을 바탕으로 미래를 만듭니다.</span></div>
+    </div></div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">About Good Partner</div><h2>사람은 공정하게 대우받을 때<br>신뢰를 느낍니다.</h2></div><p>누구나 자신의 가치를 발견하고 잠재력을 펼칠 수 있도록, 굿파트너는 공정한 교육과 성장의 기회를 만들어 갑니다.</p></div>
+      <div class="about-grid">
+        <div class="about-title">공정한 기회,<br>사람을 위한 교육.<br>그것이 우리의 시작입니다.</div>
+        <div class="about-copy"><p>Good Partner는 공정의 윤리학을 바탕으로 모든 개인의 존엄성과 권리를 존중하고, 교육과 문화의 건강한 발전에 기여합니다.</p><p>획일적인 기준이 아니라 각자의 상황과 가능성을 고려한 맞춤형 교육을 통해 학습자가 자신의 가치를 발견하고 온전히 성장할 수 있도록 돕습니다.</p><p>한 사람 한 사람의 변화가 서로를 존중하고 신뢰하는 공동체의 성장으로 이어진다고 믿습니다.</p></div>
+      </div>
+      <div class="values">
+        <article class="value"><div class="num">01 / PRINCIPLE</div><h3>공정의 윤리학</h3><p>인권 보호와 존엄성 존중을 실천합니다.</p></article>
+        <article class="value"><div class="num">02 / PRACTICE</div><h3>공정한 맞춤형 교육</h3><p>개별 가능성을 고려해 가치 발견과 성장을 돕습니다.</p></article>
+        <article class="value"><div class="num">03 / PURPOSE</div><h3>존중과 신뢰의 공동체</h3><p>성숙한 사회와 건강한 문화 형성에 기여합니다.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="programs" id="programs">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Our Programs</div><h2>나를 이해하고,<br>삶을 설계하는 교육</h2></div><p>개인의 성향과 목표, 생활환경을 함께 살펴 실천 가능한 변화로 이어지는 프로그램을 제공합니다.</p></div>
+      <div class="cards">
+        <article class="card"><div class="n">PROGRAM 01</div><h3>자아탐색 컨설팅</h3><p>자신의 성향과 내면을 이해하고 삶의 방향과 나만의 가능성을 발견합니다.</p><div class="tags"><span>MBTI</span><span>자기이해</span><span>사주명리학</span><span>아트테라피</span></div><a href="#contact">프로그램 문의 ↗</a></article>
+        <article class="card"><div class="n">PROGRAM 02</div><h3>자기경영 컨설팅</h3><p>발견한 가치와 강점을 일상에서 실천하도록 구체적인 계획과 습관을 설계합니다.</p><div class="tags"><span>시간관리</span><span>습관관리</span><span>이미지 메이킹</span><span>독서법</span></div><a href="#contact">프로그램 문의 ↗</a></article>
+        <article class="card"><div class="n">PROGRAM 03</div><h3>PICT 역량 교육</h3><p>긍정·통합 사고와 자기성찰을 바탕으로 개인의 역량과 리더십을 키웁니다.</p><div class="tags"><span>메타인지</span><span>하브루타</span><span>코칭</span><span>리더십</span></div><a href="#contact">프로그램 문의 ↗</a></article>
+      </div>
+    </div>
+  </section>
+  <section id="method">
+    <div class="wrap method-grid">
+      <div class="method-photo" role="img" aria-label="함께 배우고 소통하는 교육 현장"></div>
+      <div><div class="eyebrow">Our Approach</div><h2 style="font-size:clamp(32px,4vw,46px);line-height:1.2;letter-spacing:-.065em;margin:12px 0 20px">배움이 삶의 변화가<br>되도록 설계합니다.</h2><p style="color:var(--muted);font-size:14px;margin-bottom:32px">이해에서 시작해 구체적인 행동과 지속적인 성장으로 이어지는 단계별 맞춤 교육입니다.</p>
+        <div class="steps">
+          <div class="step"><span>STEP 01</span><div><h3>자신의 성향과 내면 분석</h3><p>현재의 생각과 행동 패턴, 강점과 가능성을 살펴봅니다.</p></div></div>
+          <div class="step"><span>STEP 02</span><div><h3>성장 방향과 목표 설정</h3><p>자신에게 의미 있는 목표를 정하고 우선순위를 세웁니다.</p></div></div>
+          <div class="step"><span>STEP 03</span><div><h3>실천 계획과 피드백</h3><p>일상에서 실천하고 점검하며 지속 가능한 변화를 만듭니다.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="impact" id="impact">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Social Contribution</div><h2>더 나은 사회를 위한<br>작은 실천</h2></div><p>교육과 문화의 기회를 넓히고, 서로의 가능성을 응원하는 건강한 연결을 만들어 갑니다.</p></div>
+      <div class="impact-grid">
+        <article class="impact-card"><div class="symbol">01</div><h3>인권 캠페인</h3><p>서로의 존엄을 존중하고 모두가 안전하게 성장할 수 있는 환경을 지향합니다.</p></article>
+        <article class="impact-card"><div class="symbol">02</div><h3>교육 캠페인</h3><p>평생학습과 역량 개발의 기회를 나누며 배움의 문턱을 낮춥니다.</p></article>
+        <article class="impact-card"><div class="symbol">03</div><h3>문화 캠페인</h3><p>문화예술 활동과 공동체 참여를 통해 삶을 풍요롭게 하는 연결을 만듭니다.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="wrap contact-box"><div><div class="eyebrow">Let's grow together</div><h2>당신의 다음 가능성을<br>굿파트너와 함께.</h2><p>교육 프로그램 및 협업 문의를 환영합니다.</p></div><a class="btn primary" href="mailto:hello@goodpartner.co.kr?subject=굿파트너%20프로그램%20문의">문의하기 ↗</a></div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><div><div class="footer-brand">GP · Good Partner</div><p>Life Design Solution</p></div><div><p>공정한 기회, 사람을 위한 교육</p><p>© <span id="year"></span> Good Partner. All rights reserved.</p></div></div></footer>
+<a class="top" href="#home" aria-label="맨 위로">↑</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
